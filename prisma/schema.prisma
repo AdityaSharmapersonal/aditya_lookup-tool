@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model CountryExplanation {
+  id                String   @id @default(cuid())
+  cacheKey          String   @unique
+  iso3              String
+  canonicalDataHash String
+  promptVersion     String
+  modelVersion      String
+  payloadJson       Json
+  validationStatus  String
+  createdAt         DateTime @default(now())
+}
