@@ -62,4 +62,24 @@ describe("searchCountries", () => {
     expect(results).toHaveLength(1);
     expect(results[0]?.name).toBe("Japan");
   });
+
+  it("correctly finds a country by name", async () => {
+    vi.mocked(fetchCountryByCode).mockRejectedValue(new Error("not found"));
+    vi.mocked(fetchCountriesByName).mockResolvedValue([
+      {
+        name: { common: "France", official: "French Republic" },
+        cca2: "FR",
+        cca3: "FRA",
+        region: "Europe",
+        flags: { svg: "https://flagcdn.com/fr.svg" }
+      }
+    ]);
+
+    const results = await searchCountries("France");
+
+    expect(fetchCountriesByName).toHaveBeenCalledWith("France");
+    expect(results).toHaveLength(1);
+    expect(results[0]?.name).toBe("France");
+    expect(results[0]?.iso3).toBe("FRA");
+  });
 });

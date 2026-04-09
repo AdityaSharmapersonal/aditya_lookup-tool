@@ -1,7 +1,5 @@
 import type { Country } from "@/lib/country/types";
-
-export const EXPLANATION_PROMPT_VERSION = "country-explainer-v1";
-export const EXPLANATION_MODEL = "gpt-5-mini";
+import { EXPLANATION_PROMPT_VERSION, EXPLANATION_MODEL } from "@/lib/versioning/version-config";
 
 export function buildExplanationMessages(country: Country) {
   return [

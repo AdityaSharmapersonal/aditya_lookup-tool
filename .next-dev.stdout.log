@@ -11,3 +11,63 @@
  ✓ Ready in 1487ms
  ○ Compiling / ...
  ✓ Compiled / in 994ms (589 modules)
+ GET / 307 in 1469ms
+ ✓ Compiled /search in 354ms (620 modules)
+ GET /search 200 in 708ms
+ GET /search?q=canada 200 in 51ms
+ ✓   Reload env: .env
+ ✓ Compiled in 227ms (195 modules)
+ ✓ Compiled in 95ms (195 modules)
+g /api/country/[iso3]/explanation ...
+ ✓ Compiled /api/country/[iso3]/explanation in 596ms (891 modules)
+ GET /api/country/CAN/explanation 200 in 3435ms
+ GET /api/country/CAN/explanation 200 in 4644ms
+ GET /api/country/CAN/explanation 200 in 4802ms
+ GET /api/country/CAN/explanation 200 in 3945ms
+ GET /api/country/CAN/explanation 200 in 3985ms
+ GET /api/country/CAN/explanation 200 in 3695ms
+ GET /api/country/CAN/explanation 200 in 3126ms
+ GET /api/country/CAN/explanation 200 in 3361ms
+ GET /api/country/CAN/explanation 200 in 3327ms
+ GET /api/country/CAN/explanation 200 in 3340ms
+ GET /api/country/CAN/explanation 200 in 3298ms
+ GET /api/country/CAN/explanation 200 in 3335ms
+ GET /country/CAN 200 in 168ms
+ GET /api/country/CAN/explanation 200 in 3512ms
+ GET /api/country/CAN/explanation 200 in 3158ms
+ GET /api/country/CAN/explanation 200 in 3153ms
+ GET /api/country/CAN/explanation 200 in 3467ms
+ GET /api/country/CAN/explanation 200 in 3219ms
+ GET /api/country/CAN/explanation 200 in 3414ms
+ GET /api/country/CAN/explanation 200 in 3098ms
+ GET /api/country/CAN/explanation 200 in 3326ms
+ GET /api/country/CAN/explanation 200 in 3283ms
+ GET /api/country/CAN/explanation 200 in 3285ms
+   Reload env: .env
+ ✓ Compiled in 341ms (630 modules)
+ GET /country/CAN 200 in 226ms
+ GET /country/CAN 200 in 218ms
+ ✓ Compiled /api/country/[iso3]/explanation in 227ms (646 modules)
+ GET /api/country/CAN/explanation 200 in 5174ms
+ GET /api/country/CAN/explanation 200 in 3344ms
+ GET /api/country/CAN/explanation 200 in 3927ms
+ GET /api/country/CAN/explanation 200 in 4290ms
+ GET /api/country/CAN/explanation 200 in 3826ms
+ GET /api/country/CAN/explanation 200 in 3548ms
+ GET /api/country/CAN/explanation 200 in 3160ms
+ GET /api/country/CAN/explanation 200 in 3473ms
+ GET /api/country/CAN/explanation 200 in 3088ms
+ GET /api/country/CAN/explanation 200 in 3220ms
+ GET /api/country/CAN/explanation 200 in 3216ms
+ GET /api/country/CAN/explanation 200 in 3462ms
+ GET /api/country/CAN/explanation 200 in 3440ms
+ GET /api/country/CAN/explanation 200 in 3270ms
+ GET /api/country/CAN/explanation 200 in 3197ms
+ GET /api/country/CAN/explanation 200 in 3357ms
+ GET /api/country/CAN/explanation 200 in 3340ms
+ GET /api/country/CAN/explanation 200 in 3216ms
+ GET /api/country/CAN/explanation 200 in 3130ms
+ GET /api/country/CAN/explanation 200 in 3273ms
+ GET /api/country/CAN/explanation 200 in 3330ms
+ ✓ Compiled in 99ms (232 modules)
+ ✓ Compiled in 172ms (398 modules)

@@ -24,6 +24,8 @@ function cleanCountry(country) {
   };
 }
 
+module.exports = { cleanCountry };
+
 function main() {
   const raw = fs.readFileSync(inputPath, "utf8");
   const countries = JSON.parse(raw);
