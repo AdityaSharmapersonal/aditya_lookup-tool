@@ -1,6 +1,8 @@
 import type { Country } from "@/lib/country/types";
 import { EXPLANATION_PROMPT_VERSION, EXPLANATION_MODEL } from "@/lib/versioning/version-config";
 
+export { EXPLANATION_MODEL };
+
 export function buildExplanationMessages(country: Country) {
   return [
     {
