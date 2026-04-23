@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "CountryExplanation" (
-    "id" TEXT NOT NULL,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "cacheKey" TEXT NOT NULL,
     "iso3" TEXT NOT NULL,
     "canonicalDataHash" TEXT NOT NULL,
@@ -8,9 +8,7 @@ CREATE TABLE "CountryExplanation" (
     "modelVersion" TEXT NOT NULL,
     "payloadJson" JSONB NOT NULL,
     "validationStatus" TEXT NOT NULL,
-    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-
-    CONSTRAINT "CountryExplanation_pkey" PRIMARY KEY ("id")
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 -- CreateIndex
