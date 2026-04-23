@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "task": "Search for Canada and open the country page",
+    "input": "Canada",
+    "expected": "Canada should appear in search results and open with correct country facts.",
+    "type": "representative"
+  },
+  {
+    "id": 2,
+    "task": "Search using partial text",
+    "input": "can",
+    "expected": "Canada and other matching countries should appear.",
+    "type": "representative"
+  },
+  {
+    "id": 3,
+    "task": "Open India country page",
+    "input": "India",
+    "expected": "The app should show name, region, population, capital, and explanation.",
+    "type": "representative"
+  },
+  {
+    "id": 4,
+    "task": "Generate explanation for Japan",
+    "input": "Japan",
+    "expected": "The explanation should use only stored country data and avoid unsupported claims.",
+    "type": "representative"
+  },
+  {
+    "id": 5,
+    "task": "Search by region-related country",
+    "input": "Brazil",
+    "expected": "Brazil should appear and the country details should load correctly.",
+    "type": "representative"
+  },
+  {
+    "id": 6,
+    "task": "Search for fake country",
+    "input": "Atlantis",
+    "expected": "The app should show no results instead of crashing.",
+    "type": "failure"
+  },
+  {
+    "id": 7,
+    "task": "Search with empty input",
+    "input": "",
+    "expected": "The app should show a helpful message or prevent empty search.",
+    "type": "failure"
+  }
+]

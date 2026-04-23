@@ -18,10 +18,12 @@
  ✓   Reload env: .env
  ✓ Compiled in 227ms (195 modules)
  ✓ Compiled in 95ms (195 modules)
-g /api/country/[iso3]/explanation ...
- ✓ Compiled /api/country/[iso3]/explanation in 596ms (891 modules)
- GET /api/country/CAN/explanation 200 in 3435ms
- GET /api/country/CAN/explanation 200 in 4644ms
+ ✓ Compiled in 171ms (195 modules)
+ ✓ Compiled in 67ms (195 modules)
+ ✓ Compiled in 90ms (195 modules)
+ ✓ Compiled in 70ms (195 modules)
+ ✓ Compiled in 63ms (195 modules)
+anation 200 in 4644ms
  GET /api/country/CAN/explanation 200 in 4802ms
  GET /api/country/CAN/explanation 200 in 3945ms
  GET /api/country/CAN/explanation 200 in 3985ms
@@ -71,3 +73,8 @@ g /api/country/[iso3]/explanation ...
  GET /api/country/CAN/explanation 200 in 3330ms
  ✓ Compiled in 99ms (232 modules)
  ✓ Compiled in 172ms (398 modules)
+ ✓ Compiled in 223ms (630 modules)
+ ✓ Compiled in 138ms (630 modules)
+ ✓ Compiled in 148ms (630 modules)
+ ✓ Compiled in 119ms (630 modules)
+ ✓ Compiled in 172ms (630 modules)

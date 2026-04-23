@@ -1,23 +1,22 @@
-# Country Lookup
+# Assignment 6 Updates
 
-Country search app with structured facts first and a grounded AI explanation second.
+## Architecture
 
-## Stack
+This project uses a hybrid architecture.
 
-- Next.js App Router
-- TypeScript
-- Prisma
-- PostgreSQL
-- OpenAI structured outputs
+The country search and lookup system is deterministic. It uses stored country data, API routes, validation, and caching.
 
-## Environment
+The explanation system is prompt-first because it sends structured country JSON to the model and asks for a short explanation.
 
-Create a `.env` file from `.env.example`.
+## Why Not RAG?
 
-## Scripts
+RAG was not implemented because the dataset is small, structured, and already stored in JSON format. Retrieval would add extra complexity without much benefit at this stage.
 
-- `npm install`
-- `npx prisma generate`
-- `npm test`
-- `npm run build`
-- `npm run dev`
+RAG would become useful if the app later included large documents, travel guides, economic reports, or historical sources.
+
+## Data Flow
+
+Raw country data is stored in:
+
+```bash
+data/bronze/countries_raw.json
