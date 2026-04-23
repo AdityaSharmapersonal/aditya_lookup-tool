@@ -15,7 +15,10 @@ export function ExplanationPanel({ iso3 }: { iso3: string }) {
     setError(null);
 
     try {
-      const response = await fetch(`/api/country/${iso3}/explanation`, { cache: "no-store" });
+      const response = await fetch(`/api/country/${iso3}/explanation`, {
+        cache: "no-store",
+      });
+
       if (!response.ok) {
         throw new Error("Explanation request failed.");
       }
@@ -58,13 +61,28 @@ export function ExplanationPanel({ iso3 }: { iso3: string }) {
     );
   }
 
+  const explanation = data.explanation as any;
+
+  const summary =
+    typeof explanation.summary === "string"
+      ? explanation.summary
+      : explanation.summary?.text ?? "No explanation summary available.";
+
+  const insights = Array.isArray(explanation.insights)
+    ? explanation.insights.map((insight: any) =>
+        typeof insight === "string" ? insight : insight?.text ?? ""
+      )
+    : [];
+
   return (
     <section className="panel explanation-card">
       <p className="fact-label">AI Explanation</p>
-      <p className="explanation-summary">{data.explanation.summary.text}</p>
+
+      <p className="explanation-summary">{summary}</p>
+
       <ul className="insights-list">
-        {data.explanation.insights.map((insight, index) => (
-          <li key={`${data.explanation.summary.text}-${index}`}>{insight.text}</li>
+        {insights.map((insight: string, index: number) => (
+          <li key={index}>{insight}</li>
         ))}
       </ul>
     </section>
